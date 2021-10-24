@@ -5,65 +5,44 @@
         <title>Create an account</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    
     <h1>
         Create an account
     </h1>
-
-<body>
-
-<p> Please, fill in the form to sucessfully create an account. All fields are required.</p>
-
-<form name="createaccount">
-
-<p>
-Name:
-
-<input text="name" type="text" name="Name" required minimum="4" maximum="8"> 
-
-</p>
-<p>
-Email:
-
-<input type="email" name="Email" required character="@">  
-
-</p>
-<p>
-
-Username: 
-
-<input type="username" name="Username" rqeuired character="@"> 
-</p>
-<p>
-
-Password:
-
-<input type="password" name="Password" rquired minimum="8" maximum="12"> 
-</p>
-
-
-<p>
-Describe yourself:
-</p>
-
-    <p>
-<textarea id="description" name="Description" rows="8" cols="50">
-Write at least two paragraphs.
-</textarea>
-    </p>
+    <p> Fill all the fields to successfully create an account. All of them are required. </p>
     
-    <p>
-<input type="checkbox" required> You understand that this is a simulation form and your data won't be stored nor processed by this website.
-</p>
+<form name=createaccount>
 
 <p>
-<button onclick="https://devnkn.github.io/intro-html/">Create Account</button>
-      
-      </form>
-  
- <a href="https://devnkn.github.io/intro-html/"> 
-     <button>Back to Homepage </button> 
-    
-    </a>
-    
+<label for="name">Name:</label><br>
+<input type=text name=mytext required>
+</p>
+<p>
+<label for="email">Email:</label><br>
+<input type=email name=email required>
+</p>
+<p>
+<label for="username">Username:</label><br>
+<input type=username name=username required>
+</p>
+<p>
+<label for="password">Password:</label><br>
+<input type=password name=password required>
+</p>
+<p>
+<label for="consent">You understand that this is a simulation form and your data will be stored in a public file, because as it's been explained before, this form works ONLY for academic purposes. If you chech the checkbox you consent your data to be stored in a public document. Do NOT NEVER send sensible information with this form. Thank you for your comprenhension.</label><br>
+<input type="checkbox" id="consent" name="consent" value="Consent" rquired>
+</p>
+
+<input type=button value="Create Account" onClick=saving(account.txt)>
+</form>
+<script>
+function saving(account.txt)
+{
+}
+</script>
+
+<a href="https://devnkn.github.io/intro-html/">
+<button>Back to Homepage</button>
+</a>
+
 </html>
