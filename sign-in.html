@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>Sign In | DevNKN's Blog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<h1>
+Sign In
+</h1>
+
+<p>
+All fields are required. Fill the information to sign in. You'll be redirected to the homepage with the permissions assigned to your role.
+
+<form name=createaccount>
+
+<p>
+<label for="email">Email:</label><br>
+<input type=email name=email required>
+</p>
+<p>
+<label for="password">Password:</label><br>
+<input type=password name=password required>
+</p>
+<label for="recaptcha">reCAPTCHA - 3 + 2 =</label><br>
+<input type=password name=password required match="5">
+<p>
+<label for="save-info">Save login information</label><br>
+<input type="checkbox" id="consent" name="consent" value="Consent" rquired>
+</p>
+
+<input type=button value="Create Account" onClick=saving(account.txt)>
+</form>
+<script>
+function saving(account.txt)
+{
+}
+</script>
+
+<a href="https://devnkn.github.io/intro-html/">
+<button>Back to Homepage</button>
+</a>
+
+</html>
